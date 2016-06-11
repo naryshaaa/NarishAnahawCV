@@ -66,3 +66,12 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* line 1, ../../sass/sass/_home.scss */
+html {
+  background: url(http://cdn.pcwallart.com/images/gradient-wallpaper-4.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
