@@ -68,10 +68,51 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 1, ../../sass/sass/_home.scss */
-html {
+body {
   background: url(http://cdn.pcwallart.com/images/gradient-wallpaper-4.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+/* line 9, ../../sass/sass/_home.scss */
+.dp {
+  width: 400px;
+  height: 400px;
+}
+
+/* line 14, ../../sass/sass/_home.scss */
+.navigation .container-fluid {
+  min-height: 75px;
+  background-color: rgba(255, 0, 0, 0.2) !important;
+}
+/* line 18, ../../sass/sass/_home.scss */
+.navigation .navbar-brand {
+  margin-left: 212px !important;
+}
+/* line 20, ../../sass/sass/_home.scss */
+.navigation .navbar-brand img {
+  width: 60px;
+  margin-top: -5px;
+}
+/* line 25, ../../sass/sass/_home.scss */
+.navigation .navbar-nav {
+  margin-left: 400px !important;
+  margin-top: 15px;
+}
+/* line 28, ../../sass/sass/_home.scss */
+.navigation .navbar-nav .nav-item {
+  margin: 0px 10px;
+}
+/* line 31, ../../sass/sass/_home.scss */
+.navigation .navbar-nav a {
+  color: #FFF;
+}
+/* line 34, ../../sass/sass/_home.scss */
+.navigation .navbar-nav a:hover {
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  color: #000;
+  margin: 0px 15px;
 }
