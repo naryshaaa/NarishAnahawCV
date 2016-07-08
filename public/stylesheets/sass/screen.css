@@ -116,3 +116,13 @@ body {
   color: #000;
   margin: 0px 15px;
 }
+
+/* line 43, ../../sass/sass/_home.scss */
+.picture {
+  top: 100px;
+  position: relative;
+}
+/* line 46, ../../sass/sass/_home.scss */
+.picture h1, .picture h2, .picture p, .picture span {
+  color: #fff;
+}
