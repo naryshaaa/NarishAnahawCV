@@ -69,47 +69,53 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 1, ../../sass/sass/_home.scss */
 body {
-  background: url(http://cdn.pcwallart.com/images/gradient-wallpaper-4.jpg) no-repeat center center fixed;
+  background: url(/public/images/bg.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-/* line 9, ../../sass/sass/_home.scss */
+/* line 10, ../../sass/sass/_home.scss */
 .dp {
   width: 400px;
   height: 400px;
+  margin-top: 50px;
 }
 
-/* line 14, ../../sass/sass/_home.scss */
+/* line 15, ../../sass/sass/_home.scss */
+.navigation {
+  width: 100%;
+  height: 637px;
+}
+/* line 20, ../../sass/sass/_home.scss */
 .navigation .container-fluid {
   min-height: 75px;
   background-color: rgba(255, 0, 0, 0.2) !important;
 }
-/* line 18, ../../sass/sass/_home.scss */
+/* line 24, ../../sass/sass/_home.scss */
 .navigation .navbar-brand {
   margin-left: 212px !important;
 }
-/* line 20, ../../sass/sass/_home.scss */
+/* line 26, ../../sass/sass/_home.scss */
 .navigation .navbar-brand img {
   width: 60px;
   margin-top: -5px;
 }
-/* line 25, ../../sass/sass/_home.scss */
+/* line 31, ../../sass/sass/_home.scss */
 .navigation .navbar-nav {
   margin-left: 400px !important;
   margin-top: 15px;
 }
-/* line 28, ../../sass/sass/_home.scss */
+/* line 34, ../../sass/sass/_home.scss */
 .navigation .navbar-nav .nav-item {
   margin: 0px 10px;
 }
-/* line 31, ../../sass/sass/_home.scss */
+/* line 37, ../../sass/sass/_home.scss */
 .navigation .navbar-nav a {
   color: #FFF;
 }
-/* line 34, ../../sass/sass/_home.scss */
+/* line 40, ../../sass/sass/_home.scss */
 .navigation .navbar-nav a:hover {
   font-size: 20px;
   background-color: rgba(255, 255, 255, 0);
@@ -117,12 +123,79 @@ body {
   margin: 0px 15px;
 }
 
-/* line 43, ../../sass/sass/_home.scss */
-.picture {
-  top: 100px;
-  position: relative;
+/* line 49, ../../sass/sass/_home.scss */
+.information {
+  width: 100%;
+  height: auto;
+  background-color: rgba(245, 245, 245, 0.85);
 }
-/* line 46, ../../sass/sass/_home.scss */
-.picture h1, .picture h2, .picture p, .picture span {
-  color: #fff;
+/* line 55, ../../sass/sass/_home.scss */
+.information .connector {
+  margin: 0 auto;
+}
+/* line 57, ../../sass/sass/_home.scss */
+.information .connector img {
+  width: 5%;
+  margin-top: -70px;
+}
+/* line 62, ../../sass/sass/_home.scss */
+.information h1, .information h2, .information p, .information span {
+  color: #000;
+}
+/* line 65, ../../sass/sass/_home.scss */
+.information .heading {
+  font-family: 'Pacifico', cursive;
+  color: #70647C;
+  padding-top: 20px;
+  font-size: 30px;
+}
+/* line 72, ../../sass/sass/_home.scss */
+.information .Descri {
+  color: #dc97f9;
+  font-size: 25px;
+  margin: 50px 0px 0px 70px;
+  font-family: 'Pacifico', cursive;
+}
+/* line 78, ../../sass/sass/_home.scss */
+.information .sideInformation {
+  width: 500px;
+  margin-top: 100px;
+}
+/* line 81, ../../sass/sass/_home.scss */
+.information .sideInformation li {
+  float: left;
+  width: 200px;
+  font-family: 'Indie Flower', cursive;
+  color: #70647C;
+  font-size: 20px;
+}
+/* line 87, ../../sass/sass/_home.scss */
+.information .sideInformation li:nth-child(1), .information .sideInformation li:nth-child(3), .information .sideInformation li:nth-child(5) {
+  font-family: 'Indie Flower', cursive;
+  color: #ff6dba;
+}
+/* line 92, ../../sass/sass/_home.scss */
+.information .sideInformation li:nth-child(2), .information .sideInformation li:nth-child(4), .information .sideInformation li:nth-child(6) {
+  font-weight: bold;
+}
+/* line 97, ../../sass/sass/_home.scss */
+.information .pitch {
+  margin: 60px 0px 70px 0px;
+}
+/* line 100, ../../sass/sass/_home.scss */
+.information .pitch p {
+  color: #dc97f9;
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+}
+/* line 106, ../../sass/sass/_home.scss */
+.information .downloadResume {
+  width: 230px;
+  height: 35px;
+  border-radius: 50px;
+  border: 2px solid #ff6dba;
+}
+/* line 111, ../../sass/sass/_home.scss */
+.information .downloadResume span {
+  font-size: 20px;
 }
