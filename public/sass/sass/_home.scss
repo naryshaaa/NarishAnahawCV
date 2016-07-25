@@ -181,6 +181,12 @@ body {
             width: 100%;
 
          }
+         p, li{
+            font-size: 14px !important;
+              @include mediaQueries(xs) {
+                 font-size: 16px !important;
+              }
+         }
         .timeline {
           position: relative;
           width: 660px;

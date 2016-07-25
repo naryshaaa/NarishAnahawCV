@@ -314,6 +314,22 @@ body {
   width: 100%;
 }
 /* line 184, ../../sass/sass/_home.scss */
+.education p, .education li {
+  font-size: 14px !important;
+}
+@media screen and (max-width: 479px) {
+  /* line 184, ../../sass/sass/_home.scss */
+  .education p, .education li {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-device-width: 479px) {
+  /* line 184, ../../sass/sass/_home.scss */
+  .education p, .education li {
+    font-size: 16px !important;
+  }
+}
+/* line 190, ../../sass/sass/_home.scss */
 .education .timeline {
   position: relative;
   width: 660px;
@@ -322,7 +338,7 @@ body {
   padding: 1em 0;
   list-style-type: none;
 }
-/* line 193, ../../sass/sass/_home.scss */
+/* line 199, ../../sass/sass/_home.scss */
 .education .timeline:before {
   position: absolute;
   left: 50%;
@@ -341,11 +357,11 @@ body {
   background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
   z-index: 5;
 }
-/* line 213, ../../sass/sass/_home.scss */
+/* line 219, ../../sass/sass/_home.scss */
 .education .timeline li {
   padding: 1em 0;
 }
-/* line 217, ../../sass/sass/_home.scss */
+/* line 223, ../../sass/sass/_home.scss */
 .education .timeline li:after {
   content: "";
   display: block;
@@ -353,7 +369,7 @@ body {
   clear: both;
   visibility: hidden;
 }
-/* line 226, ../../sass/sass/_home.scss */
+/* line 232, ../../sass/sass/_home.scss */
 .education .achievements-left {
   position: relative;
   top: 90px;
@@ -362,7 +378,7 @@ body {
   text-align: right;
   color: #FFF;
 }
-/* line 233, ../../sass/sass/_home.scss */
+/* line 239, ../../sass/sass/_home.scss */
 .education .achievements-left .icon-achievement-1 {
   background: url(/public/images/ic_trophy.svg);
   background-size: 100% 100%;
@@ -377,7 +393,7 @@ body {
   border-radius: 10px;
   z-index: 10;
 }
-/* line 249, ../../sass/sass/_home.scss */
+/* line 255, ../../sass/sass/_home.scss */
 .education .achievements-left .icon-achievement-2 {
   background: url(/public/images/ic_badge.png);
   background-size: 100% 100%;
@@ -392,7 +408,7 @@ body {
   border-radius: 10px;
   z-index: 10;
 }
-/* line 268, ../../sass/sass/_home.scss */
+/* line 274, ../../sass/sass/_home.scss */
 .education .achievements-right {
   position: relative;
   top: 90px;
@@ -401,7 +417,7 @@ body {
   text-align: left;
   color: #FFF;
 }
-/* line 275, ../../sass/sass/_home.scss */
+/* line 281, ../../sass/sass/_home.scss */
 .education .achievements-right .icon-achievement-1 {
   background: url(/public/images/ic_badge.png);
   background-size: 100% 100%;
@@ -416,7 +432,7 @@ body {
   border-radius: 10px;
   z-index: 10;
 }
-/* line 291, ../../sass/sass/_home.scss */
+/* line 297, ../../sass/sass/_home.scss */
 .education .achievements-right .icon-achievement-2 {
   background: url(/public/images/ic_crown.svg);
   background-size: 100% 100%;
@@ -432,26 +448,26 @@ body {
   border-radius: 10px;
   z-index: 10;
 }
-/* line 309, ../../sass/sass/_home.scss */
+/* line 315, ../../sass/sass/_home.scss */
 .education .direction-l {
   position: relative;
   width: 300px;
   float: left;
   text-align: right;
 }
-/* line 316, ../../sass/sass/_home.scss */
+/* line 322, ../../sass/sass/_home.scss */
 .education .direction-r {
   position: relative;
   width: 300px;
   float: right;
 }
-/* line 322, ../../sass/sass/_home.scss */
+/* line 328, ../../sass/sass/_home.scss */
 .education .flag-wrapper {
   position: relative;
   display: inline-block;
   text-align: center;
 }
-/* line 329, ../../sass/sass/_home.scss */
+/* line 335, ../../sass/sass/_home.scss */
 .education .flag {
   position: relative;
   display: inline;
@@ -461,19 +477,19 @@ body {
   font-weight: 600;
   text-align: left;
 }
-/* line 340, ../../sass/sass/_home.scss */
+/* line 346, ../../sass/sass/_home.scss */
 .education .direction-l .flag {
   -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
 }
-/* line 346, ../../sass/sass/_home.scss */
+/* line 352, ../../sass/sass/_home.scss */
 .education .direction-r .flag {
   -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
 }
-/* line 352, ../../sass/sass/_home.scss */
+/* line 358, ../../sass/sass/_home.scss */
 .education li:nth-child(3) .direction-r .flag:before {
   background: url(/public/images/ic_lpu.png);
   background-size: 75%;
@@ -491,11 +507,11 @@ body {
   border-radius: 50%;
   z-index: 10;
 }
-/* line 372, ../../sass/sass/_home.scss */
+/* line 378, ../../sass/sass/_home.scss */
 .education li:nth-child(3) .direction-r .flag:before {
   left: -50px;
 }
-/* line 376, ../../sass/sass/_home.scss */
+/* line 382, ../../sass/sass/_home.scss */
 .education .direction-l .flag:before,
 .education .direction-r .flag:before {
   background: url(/public/images/ic_briefcase.svg);
@@ -510,11 +526,11 @@ body {
   border-radius: 10px;
   z-index: 10;
 }
-/* line 393, ../../sass/sass/_home.scss */
+/* line 399, ../../sass/sass/_home.scss */
 .education .direction-r .flag:before {
   left: -50px;
 }
-/* line 397, ../../sass/sass/_home.scss */
+/* line 403, ../../sass/sass/_home.scss */
 .education .direction-l .flag:after {
   content: "";
   position: absolute;
@@ -528,7 +544,7 @@ body {
   border-width: 8px;
   pointer-events: none;
 }
-/* line 411, ../../sass/sass/_home.scss */
+/* line 417, ../../sass/sass/_home.scss */
 .education .direction-r .flag:after {
   content: "";
   position: absolute;
@@ -542,7 +558,7 @@ body {
   border-width: 8px;
   pointer-events: none;
 }
-/* line 425, ../../sass/sass/_home.scss */
+/* line 431, ../../sass/sass/_home.scss */
 .education .time-wrapper {
   display: inline;
   line-height: 1em;
@@ -550,21 +566,21 @@ body {
   color: #fa5050;
   vertical-align: middle;
 }
-/* line 434, ../../sass/sass/_home.scss */
+/* line 440, ../../sass/sass/_home.scss */
 .education .direction-l .time-wrapper {
   float: left;
 }
-/* line 438, ../../sass/sass/_home.scss */
+/* line 444, ../../sass/sass/_home.scss */
 .education .direction-r .time-wrapper {
   float: right;
 }
-/* line 442, ../../sass/sass/_home.scss */
+/* line 448, ../../sass/sass/_home.scss */
 .education .time {
   display: inline-block;
   padding: 4px 6px;
   background: #f8f8f8;
 }
-/* line 448, ../../sass/sass/_home.scss */
+/* line 454, ../../sass/sass/_home.scss */
 .education .desc {
   margin: 1em 0.75em 0 0;
   color: #FFF;
@@ -572,37 +588,37 @@ body {
   font-style: italic;
   line-height: 1.5em;
 }
-/* line 456, ../../sass/sass/_home.scss */
+/* line 462, ../../sass/sass/_home.scss */
 .education .direction-r .desc {
   margin: 1em 0 0 0.75em;
 }
 @media screen and (max-width: 660px) {
-  /* line 464, ../../sass/sass/_home.scss */
+  /* line 470, ../../sass/sass/_home.scss */
   .education .timeline {
     width: 100%;
     padding: 4em 0 1em 0;
   }
-  /* line 469, ../../sass/sass/_home.scss */
+  /* line 475, ../../sass/sass/_home.scss */
   .education .timeline li {
     padding: 2em 0;
   }
-  /* line 473, ../../sass/sass/_home.scss */
+  /* line 479, ../../sass/sass/_home.scss */
   .education .direction-l,
   .education .direction-r {
     float: none;
     width: 100%;
     text-align: center;
   }
-  /* line 481, ../../sass/sass/_home.scss */
+  /* line 487, ../../sass/sass/_home.scss */
   .education .flag-wrapper {
     text-align: center;
   }
-  /* line 485, ../../sass/sass/_home.scss */
+  /* line 491, ../../sass/sass/_home.scss */
   .education .flag {
     background: white;
     z-index: 15;
   }
-  /* line 490, ../../sass/sass/_home.scss */
+  /* line 496, ../../sass/sass/_home.scss */
   .education .direction-l .flag:before,
   .education .direction-r .flag:before {
     position: absolute;
@@ -618,7 +634,7 @@ body {
     border: 4px solid #ff5050;
     z-index: 10;
   }
-  /* line 506, ../../sass/sass/_home.scss */
+  /* line 512, ../../sass/sass/_home.scss */
   .education .direction-l .flag:after,
   .education .direction-r .flag:after {
     content: "";
@@ -633,22 +649,22 @@ body {
     border-width: 8px;
     pointer-events: none;
   }
-  /* line 521, ../../sass/sass/_home.scss */
+  /* line 527, ../../sass/sass/_home.scss */
   .education .time-wrapper {
     display: block;
     position: relative;
     margin: 4px 0 0 0;
     z-index: 14;
   }
-  /* line 528, ../../sass/sass/_home.scss */
+  /* line 534, ../../sass/sass/_home.scss */
   .education .direction-l .time-wrapper {
     float: none;
   }
-  /* line 532, ../../sass/sass/_home.scss */
+  /* line 538, ../../sass/sass/_home.scss */
   .education .direction-r .time-wrapper {
     float: none;
   }
-  /* line 536, ../../sass/sass/_home.scss */
+  /* line 542, ../../sass/sass/_home.scss */
   .education .desc {
     position: relative;
     margin: 1em 0 0 0;
@@ -659,7 +675,7 @@ body {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
     z-index: 15;
   }
-  /* line 548, ../../sass/sass/_home.scss */
+  /* line 554, ../../sass/sass/_home.scss */
   .education .direction-l .desc,
   .education .direction-r .desc {
     position: relative;
@@ -669,28 +685,28 @@ body {
   }
 }
 @media screen and (min-width: 400px) and (max-width: 660px) {
-  /* line 561, ../../sass/sass/_home.scss */
+  /* line 567, ../../sass/sass/_home.scss */
   .education .direction-l .desc,
   .education .direction-r .desc {
     margin: 1em 4em 0 4em;
   }
 }
-/* line 568, ../../sass/sass/_home.scss */
+/* line 574, ../../sass/sass/_home.scss */
 .education .jobFunctions li:before {
   content: url();
 }
 
-/* line 574, ../../sass/sass/_home.scss */
+/* line 580, ../../sass/sass/_home.scss */
 .skills {
   width: 100%;
   height: auto;
   background-color: rgba(255, 255, 255, 0.85);
 }
-/* line 578, ../../sass/sass/_home.scss */
+/* line 584, ../../sass/sass/_home.scss */
 .skills .heading {
   color: rgba 0, 0, 255, 1;
 }
-/* line 581, ../../sass/sass/_home.scss */
+/* line 587, ../../sass/sass/_home.scss */
 .skills .spinners {
   padding: 0px 50px;
 }
