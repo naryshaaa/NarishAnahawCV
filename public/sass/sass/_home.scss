@@ -1,3 +1,4 @@
+@import "_mobileGrid.scss";
 body {
 
      background: url(/public/images/bg.png) no-repeat center center fixed;
@@ -6,7 +7,18 @@ body {
           -o-background-size: cover;
           background-size: cover;
 }
+@include mediaQueries(xs) {
+    .container{
+        width: 100% !important;
+    }
+}
+.heading{
+        font-family: 'Pacifico', cursive;
 
+        padding-top: 20px;
+        font-size: 30px;
+
+    }
 .dp{
     width: 400px;
     height: 400px;
@@ -63,11 +75,7 @@ body {
         color: #000;
     }
     .heading{
-        font-family: 'Pacifico', cursive;
-        color: #70647C;
-        padding-top: 20px;
-        font-size: 30px;
-
+          color: #70647C;
     }
     .Descri{
         color: #dc97f9;
@@ -80,37 +88,482 @@ body {
         margin-top: 100px;
         li{
             float: left;
-            width: 200px;
+            width: 250px;
             font-family: 'Indie Flower', cursive;
             color: #70647C;
             font-size: 20px;
-            &:nth-child(1), &:nth-child(3), &:nth-child(5) {
-                 font-family: 'Indie Flower', cursive;
-                 color: #ff6dba;
-
-            }
-            &:nth-child(2), &:nth-child(4), &:nth-child(6) {
+            &:nth-child(n+1) {
                 font-weight: bold;
             }
+            &:nth-child(2n+1) {
+                 font-family: 'Indie Flower', cursive;
+                 color: #ff6dba;
+                 font-weight: normal;
+            }
+
         }
     }
     .pitch{
 
          margin: 60px 0px 70px 0px;
          p{
-            color: #dc97f9;
+             color: #dc97f9;
              font-size: 20px;
              font-family: 'Indie Flower', cursive;
+             font-weight: bold;
          }
     }
-    .downloadResume{
-        width: 230px;
-        height: 35px;
-        border-radius: 50px;
-        border: 2px solid #ff6dba;
-        span{
-           font-size: 20px;
+    .socialMedia{
+        margin: 20px 0px 50px 0px;
+        img{
+            width: 75px;
+            margin: 0px 20px;
+        }
+
+    }
+    .DL{
+
+        .btn-success{
+            background-color: rgba(237,	21,	102, 0.5);
+            border-color: rgba(237, 21, 102, 0.8) !important;
+            font-family: 'Pacifico', cursive !important;
+            &:visited{
+                 background-color: rgba(237,	21,	102, 0.5);
+                 border-color: rgba(237, 21, 102, 0.8) !important;
+            }
+            &:hover{
+                 background-color: rgb(237, 21, 102);
+                 -webkit-box-shadow: 0px 0px 20px 1px rgba(247,46,184,1);
+                 -moz-box-shadow: 0px 0px 20px 1px rgba(247,46,184,1);
+                 box-shadow: 0px 0px 20px 1px rgba(247,46,184,1);
+            }
+
+        }
+        .glyphicon{
+            color: yellow;
+            font-size: 25px;
+            margin-bottom: 75px;
         }
     }
 
+}
+
+.education{
+      width: 100%;
+      height: auto;
+      background-color: rgba(70,101,148,0.85);
+     // margin-top: -20px;
+       // background: rgb(230,230,230);
+
+        color: rgb(50,50,50);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 112.5%;
+        line-height: 1.6em;
+         .heading{
+                  color: #FFF;
+            }
+         ul{
+            width: 100%;
+
+         }
+        .timeline {
+          position: relative;
+          width: 660px;
+          margin: 0 auto;
+          margin-top: 20px;
+          padding: 1em 0;
+          list-style-type: none;
+        }
+
+        .timeline:before {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          content: ' ';
+          display: block;
+          width: 6px;
+          height: 100%;
+          margin-left: -3px;
+          background: rgb(80,80,80);
+          background: -moz-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+          background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+          background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+          background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+          background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+
+          z-index: 5;
+        }
+
+        .timeline li {
+          padding: 1em 0;
+        }
+
+        .timeline li:after {
+          content: "";
+          display: block;
+          height: 0;
+          clear: both;
+          visibility: hidden;
+        }
+
+
+       .achievements-left{
+           position: relative;
+           top: 90px;
+           width: 300px;
+           float: left;
+           text-align: right;
+           color: #FFF;
+           .icon-achievement-1{
+                 background: url(/public/images/ic_trophy.svg);
+                 background-size: 100% 100%;
+                 position: absolute;
+                 top: 10%;
+                 right: -50px;
+                 content: ' ';
+                 display: block;
+                 width: 40px;
+                 height: 40px;
+                 margin-top: -10px;
+                 //background: #fff;
+                 border-radius: 10px;
+                 //border: 4px solid rgb(255,80,80);
+                 z-index: 10;
+           }
+           .icon-achievement-2{
+                            background: url(/public/images/ic_badge.png);
+                             background-size: 100% 100%;
+
+                            position: absolute;
+                            top: 50%;
+                            right: -50px;
+                            content: ' ';
+                            display: block;
+                            width: 40px;
+                            height: 40px;
+                            margin-top: -10px;
+                            //background: #fff;
+                            border-radius: 10px;
+                            //border: 4px solid rgb(255,80,80);
+                            z-index: 10;
+                      }
+       }
+
+       .achievements-right{
+                  position: relative;
+                  top: 90px;
+                  width: 300px;
+                  float: right;
+                  text-align: left;
+                  color: #FFF;
+                  .icon-achievement-1{
+                        background: url(/public/images/ic_badge.png);
+                        background-size: 100% 100%;
+                        position: absolute;
+                        top: 10%;
+                        left: -50px;
+                        content: ' ';
+                        display: block;
+                        width: 40px;
+                        height: 40px;
+                        margin-top: -10px;
+                        //background: #fff;
+                        border-radius: 10px;
+                        //border: 4px solid rgb(255,80,80);
+                        z-index: 10;
+                  }
+                  .icon-achievement-2{
+                                   background: url(/public/images/ic_crown.svg);
+                                    background-size: 100% 100%;
+                                   background-color: rgba(255, 255, 255, 0.8);
+                                   position: absolute;
+                                   top: 50%;
+                                   left: -50px;
+                                   content: ' ';
+                                   display: block;
+                                   width: 40px;
+                                   height: 40px;
+                                   margin-top: -10px;
+                                   //background: #fff;
+                                   border-radius: 10px;
+                                   //border: 4px solid rgb(255,80,80);
+                                   z-index: 10;
+                             }
+              }
+        .direction-l {
+          position: relative;
+          width: 300px;
+          float: left;
+          text-align: right;
+        }
+
+        .direction-r {
+          position: relative;
+          width: 300px;
+          float: right;
+        }
+
+        .flag-wrapper {
+          position: relative;
+          display: inline-block;
+
+          text-align: center;
+        }
+
+        .flag {
+          position: relative;
+          display: inline;
+          background: rgb(248,248,248);
+          padding: 6px 10px;
+          border-radius: 5px;
+
+          font-weight: 600;
+          text-align: left;
+        }
+
+        .direction-l .flag {
+          -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+          -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+          box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        }
+
+        .direction-r .flag {
+          -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+          -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+          box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        }
+        li:nth-child(3){
+            .direction-r .flag:before {
+                      background: url(/public/images/ic_lpu.png);
+                      background-size: 75%;
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-color: #FFF;
+                      position: absolute;
+                      top: 25%;
+                      right: -68px;
+                      content: ' ';
+                      display: block;
+                      width: 40px;
+                      height: 40px;
+                      margin-top: -10px;
+                      //background: #fff;
+                      border-radius: 50%;
+                      //border: 2px solid rgb(255,80,80);
+                      z-index: 10;
+                    }
+
+                    .direction-r .flag:before {
+                      left: -50px;
+                    }
+        }
+        .direction-l .flag:before,
+        .direction-r .flag:before {
+          background: url(/public/images/ic_briefcase.svg);
+          position: absolute;
+          top: 25%;
+          right: -68px;
+          content: ' ';
+          display: block;
+          width: 40px;
+          height: 40px;
+          margin-top: -10px;
+          //background: #fff;
+          border-radius: 10px;
+          //border: 4px solid rgb(255,80,80);
+          z-index: 10;
+        }
+
+        .direction-r .flag:before {
+          left: -50px;
+        }
+
+        .direction-l .flag:after {
+          content: "";
+          position: absolute;
+          left: 100%;
+          top: 50%;
+          height: 0;
+          width: 0;
+          margin-top: -8px;
+          border: solid transparent;
+          border-left-color: rgb(248,248,248);
+          border-width: 8px;
+          pointer-events: none;
+        }
+
+        .direction-r .flag:after {
+          content: "";
+          position: absolute;
+          right: 100%;
+          top: 50%;
+          height: 0;
+          width: 0;
+          margin-top: -8px;
+          border: solid transparent;
+          border-right-color: rgb(248,248,248);
+          border-width: 8px;
+          pointer-events: none;
+        }
+
+        .time-wrapper {
+          display: inline;
+
+          line-height: 1em;
+          font-size: 0.66666em;
+          color: rgb(250,80,80);
+          vertical-align: middle;
+        }
+
+        .direction-l .time-wrapper {
+          float: left;
+        }
+
+        .direction-r .time-wrapper {
+          float: right;
+        }
+
+        .time {
+          display: inline-block;
+          padding: 4px 6px;
+          background: rgb(248,248,248);
+        }
+
+        .desc {
+          margin: 1em 0.75em 0 0;
+          color: #FFF;
+          font-size: 0.77777em;
+          font-style: italic;
+          line-height: 1.5em;
+        }
+
+        .direction-r .desc {
+          margin: 1em 0 0 0.75em;
+        }
+
+        /* ================ Timeline Media Queries ================ */
+
+        @media screen and (max-width: 660px) {
+
+        .timeline {
+         	width: 100%;
+        	padding: 4em 0 1em 0;
+        }
+
+        .timeline li {
+        	padding: 2em 0;
+        }
+
+        .direction-l,
+        .direction-r {
+        	float: none;
+        	width: 100%;
+
+        	text-align: center;
+        }
+
+        .flag-wrapper {
+        	text-align: center;
+        }
+
+        .flag {
+        	background: rgb(255,255,255);
+        	z-index: 15;
+        }
+
+        .direction-l .flag:before,
+        .direction-r .flag:before {
+          position: absolute;
+          top: -30px;
+        	left: 50%;
+        	content: ' ';
+        	display: block;
+        	width: 12px;
+        	height: 12px;
+        	margin-left: -9px;
+        	background: #fff;
+        	border-radius: 10px;
+        	border: 4px solid rgb(255,80,80);
+        	z-index: 10;
+        }
+
+        .direction-l .flag:after,
+        .direction-r .flag:after {
+        	content: "";
+        	position: absolute;
+        	left: 50%;
+        	top: -8px;
+        	height: 0;
+        	width: 0;
+        	margin-left: -8px;
+        	border: solid transparent;
+        	border-bottom-color: rgb(255,255,255);
+        	border-width: 8px;
+        	pointer-events: none;
+        }
+
+        .time-wrapper {
+        	display: block;
+        	position: relative;
+        	margin: 4px 0 0 0;
+        	z-index: 14;
+        }
+
+        .direction-l .time-wrapper {
+        	float: none;
+        }
+
+        .direction-r .time-wrapper {
+        	float: none;
+        }
+
+        .desc {
+        	position: relative;
+        	margin: 1em 0 0 0;
+        	padding: 1em;
+        	background: rgb(245,245,245);
+        	-webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+        	-moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+        	box-shadow: 0 0 1px rgba(0,0,0,0.20);
+
+          z-index: 15;
+        }
+
+        .direction-l .desc,
+        .direction-r .desc {
+        	position: relative;
+        	margin: 1em 1em 0 1em;
+        	padding: 1em;
+
+          z-index: 15;
+        }
+
+        }
+
+        @media screen and (min-width: 400px) and ( max-width: 660px) {
+
+        .direction-l .desc,
+        .direction-r .desc {
+        	margin: 1em 4em 0 4em;
+        }
+
+        }
+     .jobFunctions{
+        li:before{
+            content: url();
+        }
+     }
+}
+
+.skills{
+      width: 100%;
+      height: auto;
+      background-color: rgba(255,255,255,0.85);
+      .heading{
+        color: rgba (0,0,255, 1);
+      }
+      .spinners{
+        padding: 0px 50px;
+      }
 }

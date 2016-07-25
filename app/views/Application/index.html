@@ -1,7 +1,14 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
+<script>
+     $(document).ready(function(){
+        $("#downloadResume").click(function(){
+            window.open('https://drive.google.com/file/d/0B1FxnfloHdJvakQ3SjhFUXVfMEE/view','_blank');
+        });
+    });
 
+</script>
     <!--<div class="col-md-8 col-md-offset-">
         <img src="/public/images/dp.jpg" class="img-circle dp">
         <p>&{'Home'}</p>
@@ -52,9 +59,13 @@
             </div>
             <div class="col-md-6 col-md-offset-1 ">
                 <ul class="sideInformation">
-                    <li>Full name:</li>
+                    <li>You can call me:</li>
                     <li>Narish A. Anahaw</li>
-                    <li>Email Address:</li>
+                    <li>Drop a call at</li>
+                    <li>+639322199027</li>
+                    <li>You can greet me on:</li>
+                    <li>January 07 </li>
+                    <li>I'm available in cloud at:</li>
                     <li>jhannarhizze@gmail.com</li>
                     <li>Job Title:</li>
                     <li>Web Engineer</li>
@@ -67,14 +78,150 @@
             </div>
         </div>
 
-        <div class="row col-md-6 col-md-offset-4">
-            <div class="downloadResume text-center">
-                <span>Download my Resume</span>
+        <div class="socialMedia row col-md-12">
+            <div class="text-center">
+                <ul>
+                    <li class="hvr-buzz">
+                        <a href="https://www.facebook.com/narhizze.seven">
+                            <img src="/public/images/ic_linkedIn.svg">
+                        </a>
+                    </li>
+                    <li class="hvr-buzz">
+                        <a href="https://www.facebook.com/narhizze.seven">
+                            <img src="/public/images/ic_fb.svg">
+                        </a>
+                    </li>
+                    <li class="hvr-buzz">
+                        <a href="https://plus.google.com/u/0/117760381274804201366/posts/p/pub">
+                            <img src="/public/images/ic_googleplus.svg">
+                        </a>
+                    </li>
+                    <li class="hvr-buzz">
+                        <a href="https://www.instagram.com/imnaryshaaa/">
+                            <img src="/public/images/ic_instagram.svg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="DL text-center">
+
+            <div class="text-center col-md-12">
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <button type="button" class="btn btn-success btn-lg" id="downloadResume">Download my Resume</button>
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-star"></span>
             </div>
         </div>
     </div>
 </section>
 
 <section class="education">
+    <!-- The Timeline -->
+    <div class="text-center heading">
+        <h1>Education & Experience</h1>
+    </div>
+
+    <ul class="timeline">
+
+        <!-- Item 1 -->
+        <li>
+            <div class="achievements-left">
+                <ul>
+                    <li><span class="icon-achievement-1"></span>Promoted as an Engineer A from Engineer B (November 2015)</li>
+                    <li><span class="icon-achievement-2"></span>Completed Front-end training under our mother company in Taipei, Taiwan which is XYZPrinting R&D Center (May – July 2015)</li>
+                </ul>
+            </div>
+            <div class="direction-r">
+                <div class="flag-wrapper">
+                    <span class="flag">XYZ Printing/ NKG</span>
+                    <span class="time-wrapper"><span class="time">2014 - present</span></span>
+                </div>
+                <div class="desc">
+                    <h3 class="designation">Web Engineer - Front-end</h3>
+                    <p>Dedicated on R&D III Web Department of Kinpo Electronics Philippines (KPPH) Inc.</p>
+                    <ul data-title="Job Function" class="jobFunctions">
+                        <li>Person-in-charge for Web Development and Maintenance Team under R&D III Web Department.</li>
+                        <li>Responsible for the Development of New Web systems for XYZPrinting Taiwan under team Philippines.</li>
+                        <li>Responsible for website maintenance of XYZPrinting.com @ http://us.xyzprinting.com/</li>
+                        <li>Support for Git Repository maintenance, uploading & running the server.</li>
+                        <li>Responsible for Technical Job Interview for the applicants under Web Department</li>
+                        <li>Responsible for Front-end training to newly hired members.</li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+
+        <!-- Item 2 -->
+        <li>
+            <div class="achievements-right">
+                <ul>
+                    <li><span class="icon-achievement-1"></span>Successful implementation of DMAIC MI Methodology to the project entitled “Data Centralization of Yield and MSR” for the HUB System [Six Sigma Project]</li>
+                </ul>
+            </div>
+            <div class="direction-l">
+                <div class="flag-wrapper">
+                    <span class="flag">Toshiba Information Philippines</span>
+                    <span class="time-wrapper"><span class="time">2012 - 2013</span></span>
+                </div>
+                <div class="desc">
+                    <h3 class="designation">Associate Web Developer</h3>
+                    <p>Dedicated on Mobile Manufacturing Engineering Department of Toshiba Information Equipment [Phils.] Inc.</p>
+                    <ul data-title="Job Function" class="jobFunctions">
+                        <li>Development of new Web Systems/Application for the Engineering Department, target is to deploy at least one(1) system per quarter a total of four (4) in a year per developer.</li>
+                        <li>Responsible for both database (MySQL) and Graphical User Interface maintenance for deployed system under Engineering System Support and Applications Group.</li>
+                        <li>Support as document issuer for technical documentations from OME Japan thru web based application for in house manufacturing.</li>
+                        <li>Support for Manufacturing Bill of Material (BOM) data manipulation under OCA (Oracle).</li>
+                        <li>Support for Human development training as coordinator for the Engineers Technical training (Entry, Intermediate & Advance)</li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+        <!-- Item 3 -->
+        <li>
+            <div class="direction-r">
+                <div class="flag-wrapper">
+                    <span class="flag">Lyceum of the Philippines University</span>
+                    <span class="time-wrapper"><span class="time">2008-2012</span></span>
+                </div>
+                <div class="desc">
+                    <h3 class="hidden-sm hidden-xs" style="width: 500px;">Bachelor of Science in Information Technology</h3>
+                    <h3 class="hidden-lg hidden-md">Bachelor of Science in Information Technology</h3>
+                    <p>Graduated last April 2012</p>
+                </div>
+            </div>
+        </li>
+    </ul>
 
 </section>
+
+<section class="skills">
+    <div class="container">
+        <div class="heading text-center">
+            Skills
+        </div>
+        <div class="spinners">
+            <div >
+                <ul>
+                    <li class="col-md-3">
+                        <canvas class="loader"></canvas>
+                        <h4>HTML</h4>
+                    </li>
+                    <li class="col-md-3"><canvas class="loader1"></canvas></li>
+                    <li class="col-md-3"><canvas class="loader2"></canvas></li>
+                    <li class="col-md-3"><canvas class="loader3"></canvas></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
