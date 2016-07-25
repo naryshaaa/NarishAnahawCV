@@ -82,6 +82,9 @@ body {
         font-size: 25px;
         margin: 50px 0px 0px 70px;
         font-family: 'Pacifico', cursive;
+        @include mediaQueries(xs) {
+            margin: 20px 0px;
+        }
     }
     .sideInformation{
         width: 500px;
@@ -102,6 +105,11 @@ body {
             }
 
         }
+         @include mediaQueries(xs) {
+            width: 500px;
+            margin-top: -450px;
+            margin-left: 450px;
+         }
     }
     .pitch{
 
@@ -112,6 +120,10 @@ body {
              font-family: 'Indie Flower', cursive;
              font-weight: bold;
          }
+         @include mediaQueries(xs) {
+                     width: 500px;
+                    margin: 200px 0px 0px 450px;
+                  }
     }
     .socialMedia{
         margin: 20px 0px 50px 0px;
@@ -119,6 +131,9 @@ body {
             width: 75px;
             margin: 0px 20px;
         }
+         @include mediaQueries(xs) {
+             margin: 150px 0px 50px 0px;
+         }
 
     }
     .DL{
