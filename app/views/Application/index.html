@@ -8,13 +8,51 @@
         });
     });
 
+
 </script>
+
+
     <!--<div class="col-md-8 col-md-offset-">
         <img src="/public/images/dp.jpg" class="img-circle dp">
         <p>&{'Home'}</p>
     </div>-->
-<section class="navigation">
-    <nav class="navbar navbar-fixed-top navbar-light bg-faded">
+<section id="home" class="navigation">
+    <div class="navCover">
+        <nav id="cd-vertical-nav">
+            <ul>
+                <li>
+                    <a href="#home" data-number="1">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#aboutMe" data-number="2">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">About Me</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#educationExpi" data-number="3">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">Education & Experience</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills" data-number="4">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">My Skills</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="quoted col-md-3 col-md-offset-2 text-center">
+            <p class="swing">What we fear of doing most is usually what we most need to do.
+               <br> ~ Ralph Waldo Emerson</p>
+        </div>
+    </div>
+    <!--<nav class="navbar navbar-fixed-top navbar-light bg-faded">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand hvr-buzz" href="#">
@@ -40,9 +78,10 @@
             </div>
         </div>
     </nav>
+    -->
 </section>
 
-<section class="information">
+<section id="aboutMe" class="information">
     <div class="text-center connector">
         <img src="/public/images/ic_connector.svg">
     </div>
@@ -118,7 +157,7 @@
     </div>
 </section>
 
-<section class="education">
+<section id="educationExpi"class="education">
     <!-- The Timeline -->
     <div class="text-center heading">
         <h1>Education & Experience</h1>
@@ -199,7 +238,7 @@
 
 </section>
 
-<section class="skills">
+<section id="skills" class="skills">
     <div class="container">
         <div class="heading text-center">
             Skills
@@ -234,3 +273,4 @@
 </section>
 
 
+<script src="@{'/public/javascripts/main.js'}"></script>
