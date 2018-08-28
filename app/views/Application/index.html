@@ -4,7 +4,7 @@
 <script>
      $(document).ready(function(){
         $("#downloadResume").click(function(){
-            window.open('https://drive.google.com/file/d/1IYWx5OwlViYStzJQDnhAfPzQUcrncNNy/view','_blank');
+            window.open('https://drive.google.com/file/d/1ZN9VGgel_Jf01et7mg5SEBXUbg7g6Jx4/view','_blank');
         });
     });
 
@@ -94,8 +94,9 @@
                     </li>
                 </ul>
             </div>
+            <div class="glify text-center"><a href="#aboutMe" id="glyDown"><p class="glyphicon glyphicon-chevron-down"></p></a></div>
+
         </div>
-        <div class="glify text-center"><a href="#aboutMe" id="glyDown"><p class="glyphicon glyphicon-chevron-down"></p></a></div>
 
     </div>
     <!--<nav class="navbar navbar-fixed-top navbar-light bg-faded">
@@ -367,7 +368,10 @@
         <div class="heading text-center">
             Skills
         </div>
-        <div class="spinners">
+        <div class="skillsSet">
+            <div id="skillsContainer"  style="height: 500px; width: 100%;"></div>
+        </div>
+        <!-- <div class="spinners">
             <div class="text-center" >
                 <div id="bars">
                     <div class="bar" data-percent="90">
@@ -409,7 +413,7 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
 
     </div>
 
@@ -645,5 +649,44 @@
     </div>
 </section>
 
+<script>
+window.onload = function () {
 
+    var options = {
+	animationEnabled: true,
+	title:{
+		text: "Development Tools"
+	},
+	axisY:{
+		//title:"Coal (mn tonnes)"
+	},
+	toolTip: {
+		shared: true,
+		reversed: true
+	},
+	data: [
+	    {
+		type: "stackedColumn",
+		name: "",
+		showInLegend: "true",
+		yValueFormatString: "#",
+		dataPoints: [
+			{ y: 95, label: "HTML5" },
+			{ y: 95, label: "SASS/ CSS" },
+			{ y: 80, label: "Javascript" },
+			{ y: 80, label: "JQuery" },
+			{ y: 95, label: "Bootstrap" },
+			{ y: 70, label: "Angular JS" },
+			{ y: 85, label: "JSON" },
+			{ y: 50, label: "PHP" },
+			{ y: 40, label: "Java" }
+		    ]
+	    }
+	]
+};
+$("#skillsContainer").CanvasJSChart(options);
+}
+</script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
 <script src="@{'/public/javascripts/main.js'}"></script>
