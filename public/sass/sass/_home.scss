@@ -467,6 +467,10 @@ body {
 .contact{
      width: 100%;
 
+     #map {
+             height: 100%;
+           }
+
     @include mediaQueries(sm)  {
             height: auto;
      }

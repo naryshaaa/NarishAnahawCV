@@ -19,7 +19,7 @@
 
 </script>
 
-
+<body onload="initMap()">
 <section id="home" class="navigation">
     <div class="navCover">
         <nav id="cd-vertical-nav">
@@ -43,7 +43,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#skills" data-number="4">
+                    <a href="#skillsContainer" data-number="4">
                         <span class="cd-dot"></span>
                         <span class="cd-label">My Skills</span>
                     </a>
@@ -286,7 +286,7 @@
 
                         </ul>
                         </p>
-                        <a href="#0" class="cd-timeline__read-more">Read more</a>
+                       <!-- <a href="#0" class="cd-timeline__read-more">Read more</a> -->
                         <span class="cd-timeline__date">July 2018 - Present</span>
                     </div> <!-- cd-timeline__content -->
                 </div> <!-- cd-timeline__block -->
@@ -304,7 +304,7 @@
                             <li>Research and Development Engineer who is responsible for new website development using PHP as programming language, Salesforce implementation of backend using of API (o-Auth).</li>
                         </ul>
                         </p>
-                        <a href="#0" class="cd-timeline__read-more">Read more</a>
+
                         <span class="cd-timeline__date">Oct 2016 - March 2017</span>
                     </div> <!-- cd-timeline__content -->
                 </div> <!-- cd-timeline__block -->
@@ -328,7 +328,7 @@
                             <li>Responsible for Front-end training to newly hired members.</li>
                         </ul>
                         </p>
-                        <a href="#0" class="cd-timeline__read-more">Read more</a>
+
                         <span class="cd-timeline__date">Nov 2014 - Oct 2016</span>
                     </div> <!-- cd-timeline__content -->
                 </div> <!-- cd-timeline__block -->
@@ -351,7 +351,7 @@
                             <li>Support for Human development training as coordinator for the Engineers Technical training (Entry, Intermediate & Advance)</li>
                         </ul>
                         </p>
-                        <a href="#0" class="cd-timeline__read-more">Read more</a>
+
                         <span class="cd-timeline__date">June 2012 - Dec 2013</span>
                     </div> <!-- cd-timeline__content -->
                 </div> <!-- cd-timeline__block -->
@@ -364,7 +364,7 @@
                     <div class="cd-timeline__content js-cd-content">
                         <h2>Lyceum of the Philippines University - Cavite Campus</h2>
                         <p>Bachelor of Science in Information Technology <br> Graduated April 2012</p>
-                        <a href="#0" class="cd-timeline__read-more">Read more</a>
+
                         <span class="cd-timeline__date">2008-2012</span>
                     </div>
                 </div>
@@ -624,25 +624,7 @@
         </div>
         <div  class="col-lg-7 col-lg-offset-3 col-md-10 col-md-offset-1 col-sm-offset-2 col-sm-8 cont">
             <div class="col-md-7">
-                <form>
-                    <div class="form-group">
-                        <label for="inputName">NAME</label>
-                        <input type="email" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputEmail">EMAIL</label>
-                        <input type="password" class="form-control" id="inputEmail" placeholder="Password">
-                    </div>
-                    <div class="form-group">
-
-                        <label for="comment">MESSAGE</label>
-                        <textarea class="form-control" rows="5" id="comment"></textarea>
-
-                    </div>
-
-                    <button type="submit" class="btn btn-primary center-block">Submit</button>
-                </form>
+                <div id="map"></div>
             </div>
             <div class="col-md-5">
                 <div class="col-xs-hidden infoContact">
@@ -659,14 +641,34 @@
         </div>
     </div>
 </section>
+</body>
 
 <script>
-window.onload = function () {
+var marker;
+function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: {lat: 59.325, lng: 18.070}
+        });
+
+        marker = new google.maps.Marker({
+          map: map,
+          draggable: true,
+          animation: google.maps.Animation.DROP,
+          position: {lat: 59.327, lng: 18.067}
+        });
+        marker.addListener('click', toggleBounce);
+
+        chart();
+      }
+
+
+function chart() {
 
     var options = {
 	animationEnabled: true,
 	title:{
-		text: "Development Tools"
+		text: "Knowledge on Development Tools"
 	},
 	axisY:{
 		//title:"Coal (mn tonnes)"
@@ -681,6 +683,7 @@ window.onload = function () {
 		name: "",
 		showInLegend: "true",
 		yValueFormatString: "#",
+		toolTipContent: "<b>{label}: </b><span style=\"color:#CD853F\"><strong>{y}%</strong></span>",
 		dataPoints: [
 			{ y: 95, label: "HTML5" },
 			{ y: 95, label: "SASS/ CSS" },
@@ -696,7 +699,18 @@ window.onload = function () {
 	]
 };
 $("#skillsContainer").CanvasJSChart(options);
-}
+} // end of function
+
+function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+          marker.setAnimation(null);
+        } else {
+          marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+      }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_t0-63Na7EL0W0jqX5FegHpKHuh3yKp4&callback=initMap">
 </script>
 <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>

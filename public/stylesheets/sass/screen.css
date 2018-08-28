@@ -703,6 +703,10 @@ body {
   width: 100%;
   background-color: rgba(70, 101, 148, 0.85);
 }
+/* line 470, ../../sass/sass/_home.scss */
+.contact #map {
+  height: 100%;
+}
 @media screen and (min-width: 480px) and (max-width: 767px) {
   /* line 467, ../../sass/sass/_home.scss */
   .contact {
@@ -727,22 +731,22 @@ body {
     height: auto;
   }
 }
-/* line 477, ../../sass/sass/_home.scss */
+/* line 481, ../../sass/sass/_home.scss */
 .contact .heading {
   color: rgba 0, 0, 255, 1;
   margin-bottom: 10%;
 }
-/* line 481, ../../sass/sass/_home.scss */
+/* line 485, ../../sass/sass/_home.scss */
 .contact .cont {
   background-color: rgba(255, 255, 255, 0.85);
   padding: 2% 0px;
   border-radius: 20px;
 }
-/* line 485, ../../sass/sass/_home.scss */
+/* line 489, ../../sass/sass/_home.scss */
 .contact .cont .infoContact {
   padding: 30% 0%;
 }
-/* line 487, ../../sass/sass/_home.scss */
+/* line 491, ../../sass/sass/_home.scss */
 .contact .cont .infoContact .envi {
   padding-top: 5%;
 }
