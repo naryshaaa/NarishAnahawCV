@@ -73,22 +73,22 @@
             <div class="text-center">
                 <ul>
                     <li class="hvr-buzz">
-                        <a href="https://www.facebook.com/narhizze.seven">
+                        <a href="https://www.linkedin.com/in/narish-tatlonghari-824627a5" target="_blank">
                             <img src="/public/images/ic_linkedin.svg">
                         </a>
                     </li>
                     <li class="hvr-buzz">
-                        <a href="https://www.facebook.com/narhizze.seven">
+                        <a href="https://www.facebook.com/narhizze.seven" target="_blank">
                             <img src="/public/images/ic_fb.svg">
                         </a>
                     </li>
                     <li class="hvr-buzz">
-                        <a href="https://plus.google.com/u/0/117760381274804201366/posts/p/pub">
+                        <a href="https://plus.google.com/u/0/117760381274804201366/posts/p/pub" target="_blank">
                             <img src="/public/images/ic_googleplus.svg">
                         </a>
                     </li>
                     <li class="hvr-buzz">
-                        <a href="https://www.instagram.com/imnaryshaaa/">
+                        <a href="https://www.instagram.com/imnaryshaaa/" target="_blank">
                             <img src="/public/images/ic_instagram.svg">
                         </a>
                     </li>
@@ -380,6 +380,19 @@
             Skills
         </div>
         <div class="skillsSet">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <div class="col-lg-6 text-right col-sm-6" ><h4>How do you like to see my skills?</h4></div>
+                    <div class="col-lg-3 col-sm-6"><select class="form-control" id="chartType">
+                        <option value="pie">Pie</option>
+                        <option value="column" >Column</option>
+                        <option value="bar" selected>Bar</option>
+                        <option value="line">Line</option>
+                        <option value="doughnut">Doughnut</option>
+                    </select> </div>
+                </div>
+            </div>
+            <br>
             <div id="skillsContainer"  style="height: 500px; width: 100%;"></div>
         </div>
         <!-- <div class="spinners">
@@ -618,21 +631,23 @@
 </section>
 
 <section id="contact" class="contact">
+
     <div class="container">
+
         <div class="heading text-left">
             Contact
         </div>
-        <div  class="col-lg-7 col-lg-offset-3 col-md-10 col-md-offset-1 col-sm-offset-2 col-sm-8 cont">
+        <div  class="col-lg-12 col-md-12 cont">
             <div class="col-md-7">
-                <div id="map"></div>
+                <div id="map" style="height: 480px; width: 100%; margin: 0 auto; border-radius: 2%;"></div>
             </div>
-            <div class="col-md-5">
-                <div class="col-xs-hidden infoContact">
-                    <p class="text-justify">You can contact me using the form, alternatively you can use of the links below:
-                    <ul class="text-left">
-                        <li><p class="glyphicon glyphicon-envelope envi"></p> &nbsp &nbsp jhannarhizze@gmail.com </li>
-                        <li><p class="glyphicon glyphicon-earphone"></p> &nbsp &nbsp +639568995630 </li>
-                        <li><p class="glyphicon glyphicon-map-marker"></p> &nbsp &nbsp Silang, Cavite Philippines 4118 </li>
+            <div class="col-md-5 infoContact">
+                <div class="col-xs-hidden">
+                    <p class="text-center">Please contact me with the following media:
+                    <ul class="text-center">
+                        <li><p class="glyphicon glyphicon-envelope envi"></p> &nbsp jhannarhizze@gmail.com </li>
+                        <li><p class="glyphicon glyphicon-earphone"></p> &nbsp +639568995630 / <br> <p class="glyphicon glyphicon-earphone"></p> &nbsp +639434558448 </li>
+                        <li><p class="glyphicon glyphicon-map-marker"></p> &nbsp Silang, Cavite Philippines 4118 </li>
 
                     </ul>
                 </div>
@@ -647,15 +662,15 @@
 var marker;
 function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 13,
-          center: {lat: 59.325, lng: 18.070}
+          zoom: 17,
+          center: {lat: 14.2183, lng: 120.9729},
         });
 
         marker = new google.maps.Marker({
           map: map,
           draggable: true,
           animation: google.maps.Animation.DROP,
-          position: {lat: 59.327, lng: 18.067}
+          position: {lat: 14.2183, lng: 120.9729},
         });
         marker.addListener('click', toggleBounce);
 
@@ -665,40 +680,46 @@ function initMap() {
 
 function chart() {
 
-    var options = {
-	animationEnabled: true,
-	title:{
-		text: "Knowledge on Development Tools"
-	},
-	axisY:{
-		//title:"Coal (mn tonnes)"
-	},
-	toolTip: {
-		shared: true,
-		reversed: true
-	},
-	data: [
-	    {
-		type: "stackedColumn",
-		name: "",
-		showInLegend: "true",
-		yValueFormatString: "#",
-		toolTipContent: "<b>{label}: </b><span style=\"color:#CD853F\"><strong>{y}%</strong></span>",
-		dataPoints: [
-			{ y: 95, label: "HTML5" },
-			{ y: 95, label: "SASS/ CSS" },
-			{ y: 80, label: "Javascript" },
-			{ y: 80, label: "JQuery" },
-			{ y: 95, label: "Bootstrap" },
-			{ y: 70, label: "Angular JS" },
-			{ y: 85, label: "JSON" },
-			{ y: 50, label: "PHP" },
-			{ y: 40, label: "Java" }
-		    ]
-	    }
-	]
-};
-$("#skillsContainer").CanvasJSChart(options);
+    var chart = new CanvasJS.Chart("skillsContainer", {
+
+        animationEnabled: true,
+        title:{
+            text: "Knowledge on Development Tools"
+        },
+        axisY:{
+            //title:"Coal (mn tonnes)"
+        },
+        toolTip: {
+            shared: true,
+            reversed: true
+        },
+        data: [
+            {
+            type: "bar",
+            name: "",
+            //showInLegend: "true",
+            yValueFormatString: "#",
+            toolTipContent: "<b>{label}: </b><span style=\"color:#CD853F\"><strong>{y}%</strong></span>",
+            dataPoints: [
+                { y: 95, label: "HTML5" },
+                { y: 95, label: "SASS/ CSS" },
+                { y: 80, label: "Javascript" },
+                { y: 80, label: "JQuery" },
+                { y: 95, label: "Bootstrap" },
+                { y: 70, label: "Angular JS" },
+                { y: 90, label: "JSON" },
+                { y: 50, label: "PHP" },
+                { y: 40, label: "Java" }
+                ]
+            }]
+	});
+chart.render();
+var chartType = document.getElementById('chartType');
+chartType.addEventListener( "change",  function(){
+  chart.options.data[0].type = chartType.options[chartType.selectedIndex].value;
+  chart.render();
+});
+
 } // end of function
 
 function toggleBounce() {

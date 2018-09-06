@@ -107,7 +107,7 @@ body {
 
           .socialMedia{
                   @include mediaQueries(lg) {
-                      margin: 200px 0px 50px 0px;
+                      margin: 22% 0px 0px 0px;
                             img{
                                  width: 50px;
                                  margin: 0px 20px;
@@ -115,7 +115,7 @@ body {
                                     }
 
                   @include mediaQueries(md) {
-                  margin: 200px 0px 50px 0px;
+                  margin: 30% 0px 0px 0px;
                       img{
                           width: 50px;
                           margin: 0px 20px;
@@ -283,17 +283,6 @@ body {
 
                     margin-top: 10%;
                   }
-    }
-    .socialMedia{
-        margin: 20px 0px 50px 0px;
-        img{
-            width: 75px;
-            margin: 0px 20px;
-        }
-         @include mediaQueries(xs) {
-             margin: 150px 0px 50px 0px;
-         }
-
     }
     .DL{
         @include mediaQueries(lg) {
@@ -467,27 +456,33 @@ body {
 .contact{
      width: 100%;
 
-     #map {
+    /* #map {
              height: 100%;
            }
-
+    */
     @include mediaQueries(sm)  {
             height: auto;
      }
      @include mediaQueries(xs)  {
             height: auto;
      }
-     background-color: rgba(70,101,148,0.85);
+     //background-color: rgba(70,101,148,0.85);
           .heading{
             color: rgba (0,0,255, 1);
             margin-bottom: 10%;
           }
      .cont{
-           background-color: rgba(255,255,255,0.85);
+          // background-color: rgba(255,255,255,0.85);
            padding: 2% 0px;
            border-radius: 20px;
            .infoContact{
-                padding: 30% 0%;
+                background-color: rgba(255,255,255,0.85);
+                border-radius: 2%;
+                height: 480px;
+                padding-top: 5%;
+                //padding-bottom: 26.5%;
+                font-size: 20px;
+                //height: 480px;
                 .envi{
                     padding-top: 5%;
                     //font-size: 24px;
