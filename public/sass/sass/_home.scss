@@ -105,54 +105,7 @@ body {
           }
 
 
-          .socialMedia{
-                  @include mediaQueries(lg) {
-                      margin: 10% 0px 0px 0px;
-                            img{
-                                 width: 50px;
-                                 margin: 0px 20px;
-                                        }
-                                    }
 
-                  @include mediaQueries(md) {
-                  margin: 30% 0px 0px 0px;
-                      img{
-                          width: 50px;
-                          margin: 0px 20px;
-                      }
-                  }
-
-                  @include mediaQueries(sm) {
-                       visible: hidden;
-
-                      img{
-                          width: 90px;
-                        //  margin-top: 370%;
-
-
-                      }
-                  }
-                   @include mediaQueries(xs) {
-                       //margin: 150px 0px 50px 0px;
-                       img{
-                              width: 90px;
-                              //margin-top: 350%;
-
-                       }
-                   }
-
-          }
-          .glify{
-                a{
-                color: #FFF !important;
-                font-size: 30px;
-
-                }
-                a:hover{
-                 color: gray !important;
-                 font-size: 35px;
-                }
-          }
     }
     .container-fluid{
         min-height: 75px;
@@ -193,13 +146,68 @@ body {
     height: auto;
     background-color: rgba(245,245,245, 0.85);
     //top: 100px;
-    .connector{
-        margin: 0 auto;
-        img{
-            width: 5%;
-            margin-top: -70px;
-        }
-    }
+
+    .socialMedia{
+
+                      @include mediaQueries(lg) {
+                       ul{
+                                      margin-top: -90px;
+                                    }
+                                img{
+                                     width: 50px;
+                                     margin: 0px 20px;
+                                            }
+                                        }
+
+                      @include mediaQueries(md) {
+                        ul{
+                                       margin-top: -90px;
+                                     }
+                          img{
+                              width: 50px;
+                              margin: 0px 20px;
+                          }
+                      }
+
+                      @include mediaQueries(sm) {
+                       ul{
+                                      margin-top: -90px;
+                                    }
+                           visible: hidden;
+
+                          img{
+                              width: 90px;
+
+                          }
+                      }
+                       @include mediaQueries(xs) {
+                        ul{
+                                       margin-top: -130px;
+                                     }
+                           img{
+                                  width: 90px;
+                                  //margin-top: 350%;
+
+                           }
+                       }
+
+              }
+              .glify{
+                    p{
+                    color: #FFF !important;
+                    }
+                    a{
+                    color: #FFF !important;
+                    font-size: 30px;
+
+                    }
+                    a:hover{
+                     color: gray !important;
+                     font-size: 35px;
+                    }
+              }
+
+
     h1, h2, p, span{
         color: #000;
     }
