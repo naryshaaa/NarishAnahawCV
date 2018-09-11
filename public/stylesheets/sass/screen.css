@@ -645,6 +645,10 @@ body {
 .projects {
   width: 100%;
   height: auto;
+  background-image: url(/public/images/cat.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: rgba(255, 204, 204, 0.5);
 }
 @media screen and (max-width: 479px) {
@@ -659,78 +663,79 @@ body {
     height: auto;
   }
 }
-/* line 423, ../../sass/sass/_home.scss */
+/* line 427, ../../sass/sass/_home.scss */
 .projects .heading {
   color: rgba 0, 0, 255, 1;
   margin-bottom: 5%;
 }
-/* line 429, ../../sass/sass/_home.scss */
+/* line 433, ../../sass/sass/_home.scss */
 .projects .proj .table {
   width: 100%;
   height: auto;
   background-color: rgba(255, 255, 255, 0.5) !important;
   border-radius: 20px !important;
 }
-/* line 437, ../../sass/sass/_home.scss */
+/* line 441, ../../sass/sass/_home.scss */
 .projects .proj .table thead tr th {
   padding: 1.5% 0px;
   font-family: "Pacifico" !important;
   text-align: center !important;
 }
-/* line 448, ../../sass/sass/_home.scss */
+/* line 452, ../../sass/sass/_home.scss */
 .projects .proj .table tbody tr td {
   padding: 1% 0px;
   text-align: center !important;
   font-family: "Roboto" !important;
 }
-/* line 454, ../../sass/sass/_home.scss */
+/* line 458, ../../sass/sass/_home.scss */
 .projects .proj .table tbody tr .restricted {
   color: #ff0000;
 }
 
-/* line 464, ../../sass/sass/_home.scss */
+/* line 468, ../../sass/sass/_home.scss */
 .contact {
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
   /* #map {
            height: 100%;
          }
   */
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 464, ../../sass/sass/_home.scss */
+  /* line 468, ../../sass/sass/_home.scss */
   .contact {
     height: auto;
   }
 }
 @media screen and (min-device-width: 480px) and (max-device-width: 767px) {
-  /* line 464, ../../sass/sass/_home.scss */
+  /* line 468, ../../sass/sass/_home.scss */
   .contact {
     height: auto;
   }
 }
 @media screen and (max-width: 479px) {
-  /* line 464, ../../sass/sass/_home.scss */
+  /* line 468, ../../sass/sass/_home.scss */
   .contact {
     height: auto;
   }
 }
 @media screen and (max-device-width: 479px) {
-  /* line 464, ../../sass/sass/_home.scss */
+  /* line 468, ../../sass/sass/_home.scss */
   .contact {
     height: auto;
   }
 }
-/* line 478, ../../sass/sass/_home.scss */
+/* line 482, ../../sass/sass/_home.scss */
 .contact .heading {
   color: rgba 0, 0, 255, 1;
   margin-bottom: 10%;
 }
-/* line 482, ../../sass/sass/_home.scss */
+/* line 486, ../../sass/sass/_home.scss */
 .contact .cont {
   padding: 2% 0px;
   border-radius: 20px;
 }
-/* line 486, ../../sass/sass/_home.scss */
+/* line 490, ../../sass/sass/_home.scss */
 .contact .cont .infoContact {
   background-color: rgba(255, 255, 255, 0.85);
   border-radius: 2%;
@@ -738,7 +743,7 @@ body {
   padding-top: 5%;
   font-size: 20px;
 }
-/* line 494, ../../sass/sass/_home.scss */
+/* line 498, ../../sass/sass/_home.scss */
 .contact .cont .infoContact .envi {
   padding-top: 5%;
 }
